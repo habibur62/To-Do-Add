@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(270deg, #658716, #610505);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.todo-app{
+    background-color: #fff;
+    width: 500px;
+    height: 80vh;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: scroll;
+}
+.todo-app h2{
+    font-size: 32px;
+}
+.todo-app hr{
+    height: 2px;
+    margin: 10px 0;
+}
+
+.row{
+    width: 100%;
+    border-radius: 25px;
+    background-color: rgb(181, 182, 182);
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-work{
+    height: 50px;
+    width: 70%;
+    padding-left: 20px ;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.addTask{
+
+    background-color: #e70606;
+    color: #fff;
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.list-items{
+    list-style: none;
+    gap: 10px;
+    margin: 20px 0;
+    line-height: 30px;
+}
+.task{
+    font-size: 26px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+.task span{
+
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.checked{
+    text-decoration: line-through;
+}
